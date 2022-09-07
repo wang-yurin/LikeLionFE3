@@ -210,15 +210,15 @@ address {
 
 .timeline-list.mula {
   background-color: #e37066;
-  background-image: url(./image/뮤라\ 1.png);
+  background-image: url(./image/mula.png);
 }
 .timeline-list.soulbear {
   background-color: #cbdff7;
-  background-image: url(./image/소울곰_애벌래\ 1.png);
+  background-image: url(./image/soulbear.png);
 }
 .timeline-list.gary {
   background-color: #d2e579;
-  background-image: url(./image/개리_퇴근\ 1.png);
+  background-image: url(./image/gary.png);
   /* height: 600px; */
   flex-grow: 1;
 }
@@ -259,6 +259,8 @@ address {
 }
 
 .lorem-tab {
+  display: flex;
+  gap: 5px;
   margin-bottom: 20px;
   font-size: 1.6rem;
 }
@@ -359,10 +361,10 @@ address {
 }
 
 .button_arrow.left {
-  background-image: url(./image/Vector\ left.png);
+  background-image: url(./image/Vector_left.png);
 }
 .button_arrow.right {
-  background-image: url(./image/Vector\ right.png);
+  background-image: url(./image/Vector_right.png);
 }
 .button_arrow:active {
   background-color: #ffcf5c;

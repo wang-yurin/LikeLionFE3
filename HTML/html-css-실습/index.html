@@ -7,58 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모두의 HTML/CSS</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/8b17108735.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header_container">
-                <h1 class="header-logo">
-                    <a href="#">
-                        <img class="header-logo-cover" src="./image/Group 245.png" alt="모두의 HTML/CSS">
-                    </a>
-                </h1>
-                <nav class="header-navbar">
-                    <a class="header-navbar-item" href="#home">HOME</a>
-                    <a class="header-navbar-item" href="#html">HTML</a>
-                    <a class="header-navbar-item" href="#css">CSS</a>
-                    <a class="header-navbar-item" href="#javascript">JavaScript</a>
-                </nav>
-                <form class="header-input_container" action="">
-                    <input class="header-input" type="search">
-                    <button class="header-input-button" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
+        <div class="header_container wrapper">
+            <h1 class="header-logo">
+                <a href="#">
+                    <img class="header-logo-cover" src="./image/Group_245.png" alt="모두의 HTML/CSS">
+                </a>
+            </h1>
+            <nav class="header-navbar">
+                <a class="header-navbar-item" href="#home">HOME</a>
+                <a class="header-navbar-item" href="#html">HTML</a>
+                <a class="header-navbar-item" href="#css">CSS</a>
+                <a class="header-navbar-item" href="#javascript">JavaScript</a>
+            </nav>
+            <form class="header-input_container" action="index.html">
+                <input class="header-input" type="search">
+                <button class="header-input-button" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
         </div>
-
     </header>
     <main class="main">
         <section class="main-page">
-            <div class="wrapper">
-                <section class="page-info">
-                    <img class="page-info-cover" src="./image/Lycat_3 1.png" alt="인사하는 라이캣">
-                    <div class="page-info_contents">
-                        <h2 class="page-info-title">모두의 HTML/CSS</h2>
-                        <strong class="page-info-description font_lg">HELLO WORLD! :)</strong>
-                        <p class="page-info-description">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ullam aliquam ratione, a eos perspiciatis temporibus
-                        </p>
-                        <a class="page-info-button sign_btn" href="#sign">회원가입</a>
-                        <a class="page-info-button" href="#login">로그인</a>
-                    </div>
-                    <aside class="aside">
-                        <a class="aside-link" href="#">
-                            <img src="./image/aside_link.png" alt="">
-                        </a>
-                        <a class="aside-link" href="#">
-                            <img src="./image/aside_link.png" alt="">
-                        </a>
-                    </aside>
-                </section>
+            <div class="page-info wrapper">
+                <img class="page-info-cover" src="./image/Lycat_3.png" alt="인사하는 라이캣">
+                <div class="page-info_contents">
+                    <h2 class="page-info-title">모두의 HTML/CSS</h2>
+                    <strong class="page-info-description font_lg">HELLO WORLD! :)</strong>
+                    <p class="page-info-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Ullam aliquam ratione, a eos perspiciatis temporibus
+                    </p>
+                    <a class="page-info-button sign_btn" href="#sign">회원가입</a>
+                    <a class="page-info-button" href="#login">로그인</a>
+                </div>
+                <aside class="aside">
+                    <a class="aside-link" href="#">
+                        <img src="./image/aside_link.png" alt="MBTI 강의 보러가기">
+                    </a>
+                    <a class="aside-link" href="#">
+                        <img src="./image/aside_link.png" alt="MBTI 강의 보러가기">
+                    </a>
+                </aside>
             </div>
         </section>
         <section class="language">
@@ -107,19 +101,19 @@
                 <div class="timeline_container">
                     <div class="grid_culumn">
                         <figure class="timeline-list mula color_white">
-                            <time class="timeline-list-time">오전 5:00</time>
+                            <time class="timeline-list-time" datetime="05:00">오전 5:00</time>
                             <h3 class="timeline-list-title">헛둘셋넷 열심히 운동하기</h3>
                             <p class="timeline-list-description">amet consectetur adipisicing elit.</p>
                         </figure>
                         <figure class="timeline-list soulbear">
-                            <time class="timeline-list-time">오전 9:00</time>
+                            <time class="timeline-list-time" datetime="09:00">오전 9:00</time>
                             <h3 class="timeline-list-title">지친몸 이끌고 출근하기</h3>
                             <p class="timeline-list-description">amet consectetur adipisicing elit.</p>
                         </figure>
                     </div>
                     <div class="grid_culumn">
                         <figure class="timeline-list gary">
-                            <time class="timeline-list-time">오후 06:00</time>
+                            <time class="timeline-list-time" datetime="18:00">오후 06:00</time>
                             <h3 class="timeline-list-title">치킨과 함께하는 씐나는 퇴근</h3>
                             <p class="timeline-list-description">amet consectetur adipisicing elit.</p>
                         </figure>
@@ -130,14 +124,21 @@
         <section class="lorem" id="lorem">
             <div class="wrapper">
                 <h2 class="lorem-title">Lorem ipsum dolor sit.</h2>
-                <section class="lorem-tab_container">
+                <div class="lorem-tab_container">
                     <ol class="lorem-tab" reversed start="10">
-                        <button class="lorem-tab-button" type="button">Tab1</button>
-                        <button class="lorem-tab-button" type="button">Tab2</button>
-                        <button class="lorem-tab-button" type="button">Tab3</button>
+                        <li>
+                            <button class="lorem-tab-button" type="button">Tab1</button>
+                        </li>
+                        <li>
+                            <button class="lorem-tab-button" type="button">Tab2</button>
+                        </li>
+                        <li>
+                            <button class="lorem-tab-button" type="button">Tab3</button>
+                        </li>
                     </ol>
-                </section>
+                </div>
                 <section class="lorem-list_container">
+                    <h3 class="ir">lorem list</h3>
                     <ol class="lorem-list">
                         <li class="lorem-list-item">
                             <span class="lorem-list-item-number">10</span>
@@ -189,7 +190,9 @@
                             </p>
                             <time class="lorem-list-item-time" datetime="2022-01-01">2022.01.01</time>
                         </li>
-                        <a class="lorem-tab-more" href="#">more +</a>
+                        <li>
+                            <a class="lorem-tab-more" href="#">more +</a>
+                        </li>
                     </ol>
                 </section>
             </div>
@@ -206,9 +209,10 @@
         </section>
         <div class="wrapper">
             <section class="carousel">
+                <h3 class="ir">carousel</h3>
                 <ul class="carousel_container">
                     <li class="carousel-item">
-                        <img class="carousel-cover" src="./image/라이캣_출근룩.png" alt="라이캣 출근룩 이미지">
+                        <img class="carousel-cover" src="./image/lycat_look.png" alt="라이캣 출근룩">
                         <p class="carousel-description">
                             <strong>
                                 Ullam aliquam ratione, a eos
@@ -220,7 +224,7 @@
                         </p>
                     </li>
                     <li class="carousel-item">
-                        <img class="carousel-cover" src="./image/빙키.png" alt="빙키 누워서 핸드폰 하는 이미지">
+                        <img class="carousel-cover" src="./image/binky.png" alt="누워서 핸드폰 하는 빙키">
                         <p class="carousel-description">
                             <strong>
                                 Ullam aliquam ratione, a eos
@@ -232,8 +236,7 @@
                         </p>
                     </li>
                     <li class="carousel-item">
-                        <img class="carousel-cover" src="./image/자바독_버스기다리는-중 1.png"
-                            alt="버스 기다리며 핸드폰 하는 자바독 이미지">
+                        <img class="carousel-cover" src="./image/javadog.png" alt="버스 기다리며 핸드폰 하는 자바독">
                         <p class="carousel-description">
                             <strong>
                                 Ullam aliquam ratione, a eos
@@ -247,13 +250,13 @@
                 </ul>
                 <ul class="indicator_container">
                     <li class="indicator">
-                        <button class="indicator_now">현재 버튼</button>
+                        <button class="indicator_now">1페이지</button>
                     </li>
                     <li class="indicator">
-                        <button class="indicator_dot">다음 버튼</button>
+                        <button class="indicator_dot">2페이지</button>
                     </li>
                     <li class="indicator">
-                        <button class="indicator_dot">다음 버튼</button>
+                        <button class="indicator_dot">3페이지</button>
                     </li>
                 </ul>
             </section>
@@ -261,19 +264,20 @@
     </main>
     <footer class="footer">
         <div class="wrapper">
+            <h2 class="footer-logo">
+                <img src="./image/Group_24.png" alt="모두의 HTML/CSS">
+            </h2>
             <address>
-                <h2 class="footer-logo">
-                    <img src="./image/Group 24.png" alt="모두의 HTML/CSS 이미지">
-                </h2>
                 <p>
                     서울특별시 사랑시 고백구 행복동 123-45 1층<br>
-                    02-987-6543 / <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+                    <a href="tel:02-987-6543">02-987-6543</a> /
+                    <a href="mailto:abc@gmail.com">abc@gmail.com</a>
                 </p>
                 <span>©Weniv all rights reserved</span>
             </address>
         </div>
     </footer>
-    </div>
+    <script src="https://kit.fontawesome.com/8b17108735.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
