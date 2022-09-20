@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      border: 10px solid #476fa6;
+      color: #fff;
+      width: 500px;
+      text-align: center;
+    }
+
+    header {
+      background-color: #96caf2;
+      padding: 20px;
+      border-bottom: 10px solid #476fa6;
+    }
+
+    section {
+      display: flex;
+      border-bottom: 10px solid #476fa6;
+    }
+
+    article {
+      background-color: #485472;
+      flex-grow: 1;
+      border-right: 10px solid #476fa6;
+      padding: 100px 50px;
+    }
+
+    aside {
+      background-color: #c6f543;
+      flex-grow: 1;
+      flex-shrink: 0;
+      padding: 100px 10px;
+      color: #000;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #fe7869;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>header</header>
+    <section>
+      <article>section > article</article>
+      <aside>aside</aside>
+    </section>
+    <footer>footer</footer>
+  </div>
+</body>
+
+</html>
