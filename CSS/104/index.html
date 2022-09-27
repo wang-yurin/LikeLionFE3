@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .ir {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+    }
+
+    .label-hold::before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      vertical-align: -5px;
+      background-image: url(./images/icon_check_empty.png);
+    }
+
+    .input-hold:checked+.label-hold::before {
+      background-image: url(./images/icon_check.png);
+    }
+
+    .input-hold:focus+.label-hold::before {
+      outline: 2px solid dodgerblue;
+
+    }
+  </style>
+</head>
+
+<body>
+  <input class="input-hold ir" id="inputHold" type="checkbox">
+  <label class="label-hold" for="inputHold">선택해주세요</label>
+</body>
+
+</html>
