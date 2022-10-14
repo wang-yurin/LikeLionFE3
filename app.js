@@ -28,7 +28,14 @@
 // console.log(result);
 
 // 반복문 숫자 콤마
-// 못함;
+// let money = 10000;
+// let changeMoney = money.toString();
+// // console.log(typeof changeMoney);
+// for (let i = changeMoney.length - 3; i > 0; i -= 3) {
+//   changeMoney = changeMoney.slice(0, i) + "," + changeMoney.slice(i);
+// }
+
+// console.log(changeMoney);
 
 // 반복문 콤마 제거
 // function removeComma(n) {
@@ -36,7 +43,7 @@
 // }
 // removeComma("100,000,000");
 
-// 문자열 뒤집기
+// // 문자열 뒤집기
 // const str = "JavaScript";
 // const strArr = str.split("");
 // let temp = "";
@@ -46,10 +53,10 @@
 // console.log(temp);
 // console.log(str.split("").reverse().join(""));
 
-// 로또
+// // 로또
 // let lotto = [];
 // while (lotto.length < 6) {
-//   let num = parseInt(Math.random() * 45);
+//   let num = parseInt(Math.random() * 45) + 1;
 //   if (lotto.indexOf(num) === -1) {
 //     lotto.push(num);
 //   }
