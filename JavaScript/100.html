@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+
+  <script>
+
+    // const me = {
+    //   name: '웨이드',
+    //   address: '제주도 제주시 인다 1길',
+    //   phoneNum: '010-8001-6536',
+    //   canWalk: function () {
+    //     console.log('웨이드가 걷는다.');
+    //   },
+    //   teaching: function (student) {
+    //     student.levelUp();
+    //   }
+    // }
+
+    // const student = {
+    //   level: 1,
+    //   levelUp: function () {
+    //     this.level++;
+    //   }
+    // }
+
+    // me.teaching(student);
+
+
+    // const wang = {
+    //   name: 'Wang Yurin',
+    //   age: 29,
+    //   sayLove: function () {
+    //     console.log("I Love You")
+    //   },
+    //   skills: function (stat) {
+    //     console.log(`${this.name}, Never Die`)
+    //     stat.powerUp()
+    //   }
+    // }
+
+    // const stat = {
+    //   power: 1000,
+    //   defence: 900,
+    //   powerUp: function () {
+    //     this.power++
+    //   }
+    // }
+    // wang.sayLove()
+    // wang.skills(stat)
+
+
+
+    // function MenuRobot(menuList) {
+    //   this.menuList = menuList;
+    //   this.getMenu = function () {
+    //     console.log("오늘의 메뉴는 " + this.menuList[Math.floor(Math.random() * this.menuList.length)] + '입니다.');
+    //     // return this.menuList[Math.floor(Math.random() * this.menuList.length)]
+    //   }
+    // }
+
+    // robot1 = new MenuRobot(['치킨', '피자', '햄버거', '파스타', '마라탕']);
+
+    // robot1.getMenu();
+
+    function Menu(menuList) {
+
+    }
+    Menu.prototype.getMenu = function (menuList) {
+      console.log(`오늘 메뉴 ${menuList[Math.floor(Math.random() * menuList.length)]}`)
+    }
+    const one = new Menu(['치킨', '피자', '햄버거', '파스타', '마라탕'])
+    one.getMenu()
+  </script>
+
+</body>
+
+</html>
